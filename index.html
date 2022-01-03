@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .welcome{
+            background-color: rgb(181, 196, 156);
+            border: 3px solid red;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .welcome p{
+            text-transform: uppercase;
+        }
+        .welcome2{
+            background-color: rgb(240, 176, 219);  
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+            width: 50%;
+        }  
+        .types{
+            background-color: rgb(155, 49, 1);
+            color: rgb(118, 250, 114);
+        }   
+        #definition{
+            color: blue;
+            height: 12px;
+        }
+        h3{
+            color: black;
+            background-color: cyan;
+            width: 90%;
+            text-align: center;
+        }
+        #margin{
+            width: 50%;
+            margin: 0 auto;
+        }
+        .img1{
+            width: 80%;
+        padding-left: 20px;}
+        span.a {
+                display: inline; /* the default for span */
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;
+                background-color: yellow;
+              }
+              
+              span.b {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;
+                background-color: yellow;
+              }
+              
+              span.c {
+                display: block;
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;
+                background-color: yellow;
+              }
+    </style>
+</head>
+<body>
+    <div class="welcome">
+        <h1>Welcome to the CSS, this page is done by internal css</h1>
+                <p>What is CSS?</p>
+            <p> <strong> CSS </strong> is Cascading Style Sheet to make a fancy look of 
+                html code</p> 
+                        </div>
+    <h2>Types of CSS</h2>
+        <ol> <li><span class="types">Internal or Embedded</span></li>
+            <li><a href="externalcss.html">External</a></li>
+            <li>Inline</li></ol>
+
+            <div class="welcome2">
+                <h3>Let discuss about <a href="index.html">Internal</a>  or Embedded </h3>
+            <p id="definition"> style tag is used to css. Style tag must be in head tag after title and fav icon tag. Then fix the tag which we want to 
+                <strong>style</strong></p>
+            You can use background Color, font size, height, weight.
+            CSS units are: Ex: px, cm, mm, in, pt, pc. 
+                        </div> 
+            <div class="welcome"><p>There is also relative lengths. They are :</p>
+            <strong>em</strong>	Relative to the font-size of the element (2em means 2 times the size of the current font) 
+            <strong>em</strong>ex	Relative to the x-height of the current font (rarely used)<br><br> 
+            <strong>ch</strong>	Relative to the width of the "0" (zero) <br><br>
+            <strong>rem</strong>	Relative to font-size of the root element <br><br>
+            <strong>vw</strong>	Relative to 1% of the width of the viewport* <br><br>
+            <strong>vh</strong>	Relative to 1% of the height of the viewport* <br><br>
+            <strong>vmin</strong>	Relative to 1% of viewport's* smaller dimension <br><br>
+            <strong>vmax</strong>	Relative to 1% of viewport's* larger dimension<br><br>
+            <strong>%</strong>	Relative to the parent element<br><br>
+            </div>
+            <div class="welcome2">
+            <p>There is also Class and ID in css. Class is used to single particular design for more than one tags. It can be right on CSS put (dot.) before giving the class name.</p> 
+            <p>ID is used to  styles the element with the specified id. It can be right on CSS put (#) before giving the class name.</p>
+            </div>
+
+            <div class="welcome">
+                <h3>A Group Of Elements, Style A Small Portion Of Text</h3> 
+                    <p>div is used to made a group. 
+                    Span tag is used to style a portion of text.</p>
+                        </div>
+            <div class="welcome2"><h3>Border, margin</h3>
+                    <p>Border = width, solid or dotted or other type, color name.</p>
+                <ol>
+                    <ul>dotted, dashed, solid, double.</ul>
+                    <ul>groove - Defines a 3D grooved border. The effect depends on the border-color </ul>
+                     <ul>value ridge - Defines a 3D ridged border. The effect depends on the border-color value</ul>
+                    <ul>inset - Defines a 3D inset border. The effect depends on the border-color value</ul>
+                    <ul>outset - Defines a 3D outset border. The effect depends on the border-color value </ul>
+                    <ul>none - Defines no border</ul>
+                    <ul>hidden - Defines a hidden border</ul>
+                        </ol> 
+               <div class="welcome" id="margin"><h3>Margin </h3>
+               <ol>
+                   <li>One value all side</li>
+                   <li>two value - one for top-bottom, another for left-right</li>
+                   <li>three value - one for top middle for left-right last one for bottom.</li>
+                   <li>four value - top, right, bottom, left.</li>
+                      </ol> </div></div>
+
+            <div class="welcome2">
+                <h3>Padding, Different Ways To Set Padding, CSS Box Model</h3>
+                <p>Padding is reverse or margin. That means it use on inside. Where margin is used on outside.
+                For width 50% we must right 
+                    { width: 50%; 
+                    margin: 0 auto;}</p>
+                <h3>CSS Box Model</h3>
+                <p>The box model allows us to add a border around elements, and to define space between elements. Explanation of the different parts of CSS BOX MODEL. 
+                </p>
+         <ol>
+             <li>Content - The content of the box, where text and images appear</li>
+                <li>Padding - Clears an area around the content. The padding is transparent
+                </li>
+            <li>Border - A border that goes around the padding and content</li>
+        <li>Margin - Clears an area outside the border. The margin is transparent</li>
+                 </ol> <br>
+                <img class="img1" src="logo/box-model-1.png" alt="css box model"/>
+                <center><p> Fig: CSS BOX MODEL  </p> </center> </div>                
+                    
+            <div class="welcome">
+            <h3> Text Align, Font, Display, Inline, Block, Inline-Block</h3>
+            <p> inline element have <span class="a">no margin or padding but</span> allow other elements beside them.  inline-block element have <span class="b">margin or padding and</span> also allow other elements beside. block element have <span class="c">margin or padding and do not</span>  allow other elements beside</p>
+            </div>
+                
+               
+
+            
+
+</body>
+</html>
